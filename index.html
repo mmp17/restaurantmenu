@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>Our Menu</h2>
+        <div class="underline"></div>
+      </div>
+
+      <!-- menu items -->
+      <div class="menu-items">
+        <!-- menu item -->
+        <div class="menu-item">
+          <img src="./images/item-1.jpeg" alt="menu item" class="image" />
+          <div class="item-info">
+            <header>
+              <h4>Buttermilk Pancakes</h4>
+              <h4 class="price">$15.99</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi!
+            </p>
+          </div>
+        </div>
+        <!-- end of menu item -->
+        
+        <!-- menu item -->
+        <div class="menu-item">
+          <img src="./images/item-1.jpeg" alt="menu item" class="image" />
+          <div class="item-info">
+            <header>
+              <h4>Diner Double</h4>
+              <h4 class="price">$13.99</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi!
+            </p>
+          </div>
+        </div>
+        <!-- end of menu item -->
+
+        <!-- menu item -->
+        <div class="menu-item">
+          <img src="./images/item-1.jpeg" alt="menu item" class="image" />
+          <div class="item-info">
+            <header>
+              <h4>Diner Double</h4>
+              <h4 class="price">$13.99</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi!
+            </p>
+          </div>
+        </div>
+        <!-- end of menu item -->
+        <!-- menu item -->
+        <div class="menu-item">
+          <img src="./images/item-1.jpeg" alt="menu item" class="image" />
+          <div class="item-info">
+            <header>
+              <h4>Diner Double</h4>
+              <h4 class="price">$13.99</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi!
+            </p>
+          </div>
+        </div>
+        <!-- end of menu item -->
+      
+      </div>
+    </div>
+    <!-- javascript -->
+
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Menu</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Title</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-tags"></i>
+          <input type="number" id="orangeForm-number" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Price</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-images"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Image</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-mortar-pestle"></i>
+          <input type="textarea" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Description</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-deep-orange">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="text-center">
+    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Enter Menu</a>
+  </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
