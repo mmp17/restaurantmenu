@@ -71,7 +71,7 @@ window.addEventListener("load", function () {
             </p>
           </div>
           <div>
-          <button onchange='deleteItem' style="font-size:15px;color:red">Del</button>
+          <button onclick='deleteItem' style="font-size:15px;color:red">Del</button>
           <button style="font-size:13px;color:green">Edit</button>
           </div>
         </div>`;
@@ -103,12 +103,5 @@ createNewItem(
 )
 
 //delete item
-deleteItem = (id) =>{
-    let newMenu = menu_deserialized.map((value) => {
-         value.id !== id ? {...value, name:'Yangi Ism'} : value;
-         return newMenu;
-    });
-        
-    }
 
 
