@@ -71,7 +71,7 @@ window.addEventListener("load", function () {
             </p>
           </div>
           <div>
-          <button onclick='deleteItem' style="font-size:15px;color:red">Del</button>
+          <button onclick='removeElementById(${id})' style="font-size:15px;color:red">Del</button>
           <button style="font-size:13px;color:green">Edit</button>
           </div>
         </div>`;
@@ -110,7 +110,7 @@ addButton.addEventListener('click', function (e) {
   // 
   const menu = getAllMenu()
   menu.push(newMenu);
-  updateLocaStoragemenu(menu);
+  updateLocalStoragemenu(menu);
   addToBody(newMenu);
   titleValue.value = '';
   priceValue.value = '';
@@ -129,16 +129,17 @@ function removeElementById(id) {
     }
   };
 
-  updateLocaStoragemenu(allmenu)
+  updateLocalStoragemenu(allmenu)
   const menuItems = document.getElementById(id);
-  menuItems.remove();
+  menuItems.remove(id);
+  return allmenu;
 }
 
 function getAllMenu() {
   return JSON.parse(localStorage.getItem('menu') || '[]');
 }
 
-function updateLocaStoragemenu(menu) {
+function updateLocalStoragemenu(menu) {
   const allmenu = localStorage.menu = JSON.stringify(menu);
   return allmenu;
 }
